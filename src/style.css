@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+  font-family: "Karla", sans-serif;
+}
+a {
+  color: #964d7d;
+}
+.forecast-project {
+  background-color: white;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 30px 50px #41326414;
+}
+header {
+  border-bottom: 1px solid #eed3e4;
+  padding-bottom: 32px;
+}
+.search-form-input {
+  background: #f9f7fe;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 16px 20px;
+  width: 80%;
+  font-family: "Karla", sans-serif;
+  color: #3a3b3c;
+}
+.search-form-submit {
+  background: #eed3e4;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 16px 38px;
+  font-family: "Karla", sans-serif;
+  font-weight: bolder;
+  color: #272142;
+  margin-left: 6px;
+}
+main {
+  padding: 20px 0;
+}
+.forecast-main {
+  display: flex;
+  justify-content: space-between;
+}
+.forecast-city {
+  color: #272142;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 48px;
+}
+.forecast-details {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: #27214266;
+}
+.forecast-details strong {
+  color: #964d7d;
+}
+.forecast-temprature {
+  display: flex;
+}
+#forecast-temprature-emoji {
+  font-size: 40px;
+  position: relative;
+  top: 20px;
+  margin-right: 8px;
+}
+#forecast-temprature-tempvalue {
+  color: #272142;
+  font-size: 88px;
+  font-weight: 400;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 10px;
+  position: relative;
+  top: 12px;
+  margin-right: 2px;
+}
+#forecast-temprature-tempsign {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  line-height: 1;
+  position: relative;
+  top: 16px;
+  margin-right: 8px;
+}
+footer {
+  border-top: 1px solid #eed3e4;
+  padding-top: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #3a3b3c;
+}

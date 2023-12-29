@@ -3,40 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Forecast project</title>
   </head>
   <body>
-    <header>
-      <input type="search" placeholder="Enter a city.." required />
-      <input type="submit" value="Search" />
-    </header>
-    <main>
-      <div>
-        <h1>San Francisco</h1>
-        <p>
-          Friday 17:12, mist
-          <br />
-          Humidity: 92%, Wind: 8.94km/h
-        </p>
-      </div>
-      <div>🌦️ 15°C</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/HannaKrykova" target="_blank">
-        Hanna Krykova</a
-      >
-      ,is open-sourced on
-      <a
-        href="https://github.com/HannaKrykova/forecast-project"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      and hosted on
-      <a href="https://forecast-project-shecodes.netlify.app/" target="_blank">
-        Netlify
-      </a>
-    </footer>
+    <div class="forecast-project">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-submit" />
+        </form>
+      </header>
+      <main>
+        <div class="forecast-main">
+          <div>
+            <h1 class="forecast-city">San Francisco</h1>
+            <p class="forecast-details">
+              Friday 17:12, mist
+              <br />
+              Humidity: <strong>92%</strong>, Wind: <strong>8.94km/h</strong>
+            </p>
+          </div>
+          <div class="forecast-temprature">
+            <div id="forecast-temprature-emoji">🌦️</div>
+            <div id="forecast-temprature-tempvalue">15</div>
+            <div id="forecast-temprature-tempsign">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/HannaKrykova" target="_blank">
+          Hanna Krykova</a
+        >
+        , is open-sourced on
+        <a
+          href="https://github.com/HannaKrykova/forecast-project"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and hosted on
+        <a
+          href="https://forecast-project-shecodes.netlify.app/"
+          target="_blank"
+        >
+          Netlify
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
