@@ -15,12 +15,13 @@
   <body>
     <div class="forecast-project">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="searched-city"
           />
           <input type="submit" value="Search" class="search-form-submit" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="forecast-main">
           <div>
-            <h1 class="forecast-city">San Francisco</h1>
+            <h1 class="forecast-city" id="current-city">San Francisco</h1>
             <p class="forecast-details">
               Friday 17:12, mist
               <br />
@@ -63,5 +64,6 @@
         </a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
