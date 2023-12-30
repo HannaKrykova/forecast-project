@@ -41,6 +41,7 @@ header {
   font-weight: bolder;
   color: #272142;
   margin-left: 6px;
+  cursor: pointer;
 }
 main {
   padding: 20px 0;
