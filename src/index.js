@@ -6,12 +6,15 @@ function weatherInfoUpdate(response) {
   let windSpeed = document.querySelector("#wind-speed");
   let time = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
+
   city.innerHTML = response.data.city;
   temperature.innerHTML = Math.round(response.data.temperature.current);
   weatherDescription.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   time.innerHTML = formatDate(date);
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" id="forecast-temprature-emoji">`;
 }
 
 function citySearch(city) {

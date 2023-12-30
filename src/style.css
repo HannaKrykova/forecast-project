@@ -72,10 +72,8 @@ main {
   display: flex;
 }
 #forecast-temprature-emoji {
-  font-size: 40px;
-  position: relative;
-  top: 20px;
-  margin-right: 8px;
+  width: 100px;
+  height: 100px;
 }
 #forecast-temprature-tempvalue {
   color: #272142;
