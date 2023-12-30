@@ -32,6 +32,11 @@ function citySubmit(event) {
 let citySearchForm = document.querySelector("#search-form");
 citySearchForm.addEventListener("submit", citySubmit);
 
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultCity = "Beirut";
+  citySearch(defaultCity);
+});
+
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
