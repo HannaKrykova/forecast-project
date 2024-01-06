@@ -96,6 +96,41 @@ main {
   top: 16px;
   margin-right: 8px;
 }
+.daily-forecast {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.daily-forecast-day-of-the-week {
+  color: #272142;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.daily-forecast-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.daily-forecast-temperature {
+  display: flex;
+  justify-content: center;
+  color: #964d7d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.daily-forecast-temperature-max {
+  padding: 0 6px;
+}
+.daily-forecast-temperature-min {
+  opacity: 0.6;
+  padding: 0 6px;
+}
 footer {
   border-top: 1px solid #eed3e4;
   padding-top: 32px;
