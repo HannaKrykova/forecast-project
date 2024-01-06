@@ -59,3 +59,27 @@ function formatDate(date) {
   }
   return `${day} ${hours}:${minutes}`;
 }
+
+function dispayDailyForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="daily-forecast-day">
+    <div class="daily-forecast-day-of-the-week">${day}</div>
+    <div class="daily-forecast-icon">🌤️</div>
+    <div class="daily-forecast-temperature">
+      <div class="daily-forecast-temperature-max">22°</div>
+      <div class="daily-forecast-temperature-min">18°</div>
+    </div>
+  </div>
+`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+dispayDailyForecast();
